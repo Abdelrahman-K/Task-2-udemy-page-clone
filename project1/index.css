@@ -1,0 +1,41 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.card-container {
+    width: 80%;
+    margin: 110px;
+    margin-top: 0px;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: rgba(247,248,250,255)
+    /* background-image: url("https://img-c.udemycdn.com/notices/web_banner/slide_1_image_udlite/b8f46419-eca3-44c1-8ba0-ed2ca89f8884.jpg"); */
+}
+.card-container .billboard-banner--content-box--2LhRB {
+    position: relative; 
+    padding: 10px;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    border: 4px outset rgb(226, 226, 226);
+}
+.card-container .top-logo {
+    margin-left: 100px;
+}
+
+
+.random-headers {
+    margin-left: 10%;
+}
+.random-headers a {
+    text-decoration: none;
+    color: gray;
+    margin-right: 10px;
+}
+.random-headers a:hover {
+    color: black;
+}

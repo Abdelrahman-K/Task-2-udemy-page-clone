@@ -1,0 +1,88 @@
+.nav-bar {
+    background-color: rgb(255, 255, 255);
+    border: 2px outset rgba(235, 235, 235);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+    height: 45px;
+}
+.nav-bar .logo {
+    margin-left: 10px;
+}
+.nav-bar .side-bar {
+    display: none;
+}
+
+.nav-bar button {
+    cursor: pointer;
+
+}
+.nav-bar a {
+    cursor: pointer;
+}
+.nav-bar a:hover {
+    color: purple;
+}
+.nav-bar #search-bar {
+    color: gray;
+    border: 1px solid black;
+    width: 40%;
+    padding: 10px;   
+    border-radius: 40px;
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-bar #search-button {
+    width: 10%;
+    border: white;
+}
+.nav-bar #search-input {
+    width: 90%;
+    border: white;
+    Display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.nav-bar button {
+    background-color: white;
+}
+.nav-bar .login-btn {
+    height: 35px;
+    font-size: small;
+    font-weight: 550;
+}
+.nav-bar .signup-btn {
+    height: 35px;
+    background-color: black;
+    color: white;
+    font-size: small;
+    font-weight: 550;
+}
+.nav-bar .glob-btn{
+    height: 35px;
+    margin-right: 10px;
+}
+.nav-bar .shopping-cart {
+    margin-right: 5px;
+}
+@media screen and (max-width: 900px) {
+    .nav-bar a, .login-btn, .signup-btn, .glob-btn {
+        display: none;
+    }
+    .nav-bar .shopping-cart {
+        display: flex;
+        margin-right: 25px;
+    }
+    .nav-bar .logo {
+        margin-left: 50px;
+    }
+    
+    .nav-bar .side-bar {
+        display: flex;
+        margin-left: 20px;
+        border: none;
+    }
+}
