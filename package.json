@@ -1,0 +1,26 @@
+{
+  "name": "task-2-udemy-page-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdelrahman-K/Task-2-udemy-page-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdelrahman-K/Task-2-udemy-page-clone/issues"
+  },
+  "homepage": "https://github.com/Abdelrahman-K/Task-2-udemy-page-clone#readme",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "node-fetch": "^3.2.10"
+  }
+}
