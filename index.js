@@ -1,7 +1,16 @@
 // import fetch from "node-fetch";
 let data = []
+let cat = [
+    "Python",
+    "Exel",
+    "Web Development", 
+    "JavaScript",
+    "Data Science",
+    "AWS Certification",
+    "Drawing"
+];
 
-let fetchData = async (url) => {
+let fetch_data = async (url) => {
     let response = await fetch(url)
     let j = await response.json()
     return j;
@@ -21,7 +30,7 @@ let create_child = (course) => {
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fas fa-star-half-alt"></i>
+        <i class="fa fa-star-half"></i>
         ${course.enroller} 
     </div>
     <h4>${course.price}</h4>
@@ -39,9 +48,12 @@ const add_courses = (data) => {
 };
 
 const start_script = async()=> {
-    data = await fetchData("http://localhost:3000/courses");
+    data = await fetch_data("http://localhost:3000/courses");
     add_courses(data);
+    change_tab(0);
 };
+
+start_script();
 
 const search_bar = document.querySelector("#search-input");
 search_bar.addEventListener("change", function(event) {
@@ -53,11 +65,22 @@ search_bar.addEventListener("change", function(event) {
     }
     let new_data = []
     for (let i = 0; i < data.length; i++) {
-        if (data[i].title.toLowerCase().includes(val))
+        if (data[i].title.toLowerCase().includes(val.toLowerCase()))
             new_data.push(data[i]);
     }
     // data.filter(data.title.includes(val));
     add_courses(new_data);
 });
 
-start_script();
+const change_tab = (tabNumber) => {
+    document.querySelector(".explore-btn").textContent = "Explore " + cat[tabNumber];
+    // document.querySelector(".intro-paragraph h3").textContent = ;
+    // document.querySelector(".intro-paragraph p").textContent = ;
+
+    let new_data = []
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].cat === tabNumber)
+            new_data.push(data[i]);
+    }
+    add_courses(new_data);
+}
