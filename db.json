@@ -108,5 +108,39 @@
             "price": "E£199.99",
             "cat": 3
         }
+    ],
+    "top-cat": [
+        {
+            "title": "Design",
+            "image_src": "./Images/cat1.jpg"
+        },
+        {
+            "title": "Development",
+            "image_src": "./Images/cat2.jpg"
+        },
+        {
+            "title": "Marketing",
+            "image_src": "./Images/cat3.jpg"
+        },
+        {
+            "title": "IT and Software",
+            "image_src": "./Images/cat4.jpg"
+        },
+        {
+            "title": "Personal Development",
+            "image_src": "./Images/cat5.jpg"
+        },
+        {
+            "title": "Business",
+            "image_src": "./Images/cat6.jpg"
+        },
+        {
+            "title": "Photography",
+            "image_src": "./Images/cat7.jpg"
+        },
+        {
+            "title": "Music",
+            "image_src": "./Images/cat8.jpg"
+        }
     ]
 }

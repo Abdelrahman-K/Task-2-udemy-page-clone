@@ -24,9 +24,9 @@ let create_child = (course, ind) => {
         to.classList.add("active");
     to.innerHTML = `
     <div class="card col-xs-4">
-        <div class="img-wrapper"><img src=${course.image_src} class="d-block w-100" alt="..."> </div>
+        <div class="img-wrapper"><img src=${course.image_src} class="d-block w-100"> </div>
             <div class="card-body">
-                <h4>${course.title}</h4>
+                <h5>${course.title}</h5>
                 <div class="author">${course.author}</div>
                     <div class="rating">
                     ${course.rating}
@@ -37,7 +37,7 @@ let create_child = (course, ind) => {
                     <i class="fa fa-star-half"></i>
                     ${course.enroller} 
                 </div>
-                <h4>${course.price}</h4>
+                <h5>${course.price}</h5>
             </div>
         </div>
     </div>
@@ -66,12 +66,33 @@ const add_courses = (data, minPerSlide) => {
         }
     })
 };
+let create_child_top_cat = (cat) => {
+    let to = document.createElement("div");
+    to.classList.add("top-cat-template");
+    to.innerHTML = `
+        <div class="img-wrapper"><img src=${cat.image_src} class="d-block w-100"> </div>
+        <div class="course-description">
+            <h5>${cat.title}</h5>
+        </div>
+  `;
+    return to;
+};
+
+const add_top_cat = (data) => {
+    const par = document.querySelector(".top-cat");
+    par.innerHTML = "";
+    for (let i = 0; i < data.length; i++) {
+        par.appendChild(create_child_top_cat(data[i]));
+    }
+};
 
 const start_script = async () => {
     data = await fetch_data("http://localhost:3000/courses");
     add_courses(data, 4);
     change_tab(0);
     $('.carousel').carousel('pause');
+    let top_cat_data = await fetch_data("http://localhost:3000/top-cat");
+    add_top_cat(top_cat_data);
 };
 
 start_script();
@@ -79,8 +100,7 @@ start_script();
 const change_tab = (tabNumber) => {
     currentTab = tabNumber;
     document.querySelector(".explore-btn").textContent = "Explore " + cat[tabNumber];
-    // document.querySelector(".intro-paragraph h3").textContent = ;
-    // document.querySelector(".intro-paragraph p").textContent = ;
+    document.querySelector(".intro-paragraph h3").textContent = "Expand your career opportunities with " + cat[tabNumber];
     cur_data = []
     for (let i = 0; i < data.length; i++) {
         if (data[i].cat === tabNumber)
@@ -106,7 +126,6 @@ search_bar.addEventListener("change", function (event) {
     // data.filter(data.title.includes(val));
     add_courses(cur_data, 4);
 });
-
 
 
 function screenTest() {
