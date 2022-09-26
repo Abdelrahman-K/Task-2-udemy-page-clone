@@ -6,7 +6,7 @@
     align-items: center;
     overflow: hidden;
     justify-content: space-between;
-    height: 45px;
+    height: 60px;
 }
 .nav-bar .logo {
     margin-left: 10px;
@@ -68,7 +68,7 @@
 .nav-bar .shopping-cart {
     margin-right: 5px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .nav-bar a, .login-btn, .signup-btn, .glob-btn {
         display: none;
     }

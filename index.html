@@ -7,8 +7,12 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="NavBar.css">
   <link rel="stylesheet" href="courses.css">
+  <link rel="stylesheet" href="top-cat.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -17,8 +21,7 @@
       <div class="nav-bar">
         <button class="side-bar"><i class="fa fa-bars"></i></button>
         <div class="top logo">
-          <img width="60" height="25"
-            src="./Images/Udemy_logo.svg.png" />
+          <img width="60" height="25" src="./Images/Udemy_logo.svg.png" />
         </div>
         <a ref="tmp">Categories</a>
         <form class="top" id="search-bar">
@@ -39,8 +42,8 @@
     <section>
       <div class="card-container">
         <div class="billboard-banner--content-box--2LhRB">
-          <h1 data-purpose="billboard-title" class="udlite-heading-serif-xxl billboard-banner--short-title--3HjCw">
-            New to Udemy? Lucky you.</h1>
+          <h3 data-purpose="billboard-title" class="udlite-heading-serif-xxl billboard-banner--short-title--3HjCw">
+            New to Udemy? Lucky you.</h3>
           <p data-purpose="billboard-subtitle" class="udlite-text-md billboard-banner--short-subtitle--BY95O">Courses
             start at E£169.99. Get your new-student offer before it expires.</p>
         </div>
@@ -54,101 +57,109 @@
         <h1>A broad selection of courses</h1>
         <p>Choose from 204,000 online video courses with new additions published every month</p>
         <div>
-          <a href="tmp">Python</a>
-          <a href="tmp">Exel</a>
-          <a href="tmp">Web Development</a>
-          <a href="tmp">Java Script</a>
-          <a href="tmp">Data Science</a>
-          <a href="tmp">AWS Certification</a>
-          <a href="tmp">Drawing</a>
+          <button onclick="return change_tab(0)">Python</button>
+          <button onclick="return change_tab(1)">Exel</button>
+          <button onclick="return change_tab(2)">Web Development</button>
+          <button onclick="return change_tab(3)">JavaScript</button>
+          <button onclick="return change_tab(4)">Data Science</button>
+          <button onclick="return change_tab(5)">AWS Certification</button>
+          <button onclick="return change_tab(6)">Drawing</button>
         </div>
       </div>
     </section>
     <section>
       <div class="courses-container">
         <div class="intro-paragraph">
-          <h3>Expand your career opportunities with Python</h3>
+          <h3 id="">Expand your career opportunities with Python</h3>
           <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language.
             Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine
             learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses
             that will appeal to both beginners and advanced developers alike.</p>
           <button class="explore-btn">Explore Python</button>
         </div>
-        <div class="courses">
-          <div class="course-template">
-            <img src="./Images/c1python.jpg" />
-            <div class="course-description">
-              <h4>Learn Python: The Complete Python Programming Course</h4>
-              <div class="author">Avinash Jain, The Codex</div>
-              <div class="rating">
-                4.4
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half"></i>
-                (2,974)
+        <div class="container text-center my-3">
+          <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel" data-bs-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="card col-xs-4">
+                    <div class="img-wrapper"><img src="./Images/c1python.jpg" class="d-block w-100"> </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title 1</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card col-xs-4">
+                    <div class="img-wrapper"><img src="./Images/c2python.jpg" class="d-block w-100"> </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title 2</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>            
               </div>
-              <h4>E£269.99</h4>
+              <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon direction-icon" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon direction-icon" aria-hidden="true"></span>
+              </a>
             </div>
           </div>
-          <div class="course-template">
-            <img src="./Images/c2python.jpg" />
+        </div>
+    </section>
+    <section>
+      <div class="top-cat-container">
+        <div>
+          <h3>Top categories</h3>
+        </div>
+        <div class="top-cat">
+          <div class="top-cat-template">
+            <div class="img-wrapper"><img src="./Images/c1python.jpg" class="d-block w-100"> </div>
             <div class="course-description">
-              <h4>Learning Python for Data Analysis and Visualization</h4>
-              <div class="author">Jose Portilla</div>
-              <div class="rating">
-                4.4
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star-half-alt"></i>
-                (18,015)
-              </div>
-              <h4>E£319.99</h4>
+              <h5>Music</h5>
             </div>
           </div>
-          <div class="course-template">
-            <img src="./Images/c3python.jpg" />
+          <div class="top-cat-template">
+            <div class="img-wrapper"><img src="./Images/c2python.jpg" class="d-block w-100"> </div>
             <div class="course-description">
-              <h4>Python for Beginners - Learn Programming from scratch</h4>
-              <div class="author">Edwin Diaz</div>
-              <div class="rating">
-                4.4
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star-half-alt"></i>
-                (1,793)
-              </div>
-              <h4>E£269.99</h4>
+              <h5>Python</h5>
             </div>
           </div>
-          <div class="course-template">
-            <img src="./Images/c4web.jpg" />
+          <div class="top-cat-template">
+            <div class="img-wrapper"><img src="./Images/c3python.jpg" class="d-block w-100"> </div>
             <div class="course-description">
-              <h4>The Complete 2022 Web Development Course</h4>
-              <div class="author">Development Island (UK)</div>
-              <div class="rating">
-                4.6
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star-half-alt"></i>
-                (6,858)
-              </div>
-              <h4>E£319.99</h4>
+              <h5>Development</h5>
             </div>
           </div>
-          
+          <div class="top-cat-template">
+            <div class="img-wrapper"><img src="./Images/c4python.jpg" class="d-block w-100"> </div>
+            <div class="course-description">
+              <h5>Design</h5>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <script src="index.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </body>
 
 </html>

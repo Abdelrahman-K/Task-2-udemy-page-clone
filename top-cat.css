@@ -1,0 +1,18 @@
+.top-cat-container {
+    /* width: 68%; */
+    margin: 40px 14% 20px 14%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px 10px 20px;
+}
+.top-cat-container .top-cat {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-cat-container .top-cat .top-cat-template {
+    width: 23%;
+    min-width: 220px;
+    margin: 1%;
+
+}

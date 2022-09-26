@@ -1,20 +1,13 @@
 {
     "courses": [
         {
-            "title": "The Complete 2022 Web Development Course",
-            "image_src": "./Images/c4web.jpg",
-            "author": "Development Island (UK)",
-            "rating": 4.6,
-            "enroller": "(6,858)",
-            "price": "E£319.99"
-        },
-        {
             "title": "Python for Beginners - Learn Programming from scratch",
             "image_src": "./Images/c3python.jpg",
             "author": "Edwin Diaz",
             "rating": 4.4,
             "enroller": "(1,793)",
-            "price": "E£269.99"
+            "price": "E£269.99",
+            "cat": 0
         },
         {
             "title": "Learning Python for Data Analysis and Visualization",
@@ -22,7 +15,8 @@
             "author": "Jose Portilla",
             "rating": 4.4,
             "enroller": "(18,015)",
-            "price": "E£319.99"
+            "price": "E£319.99",
+            "cat": 0
         },
         {
             "title": "Learn Python: The Complete Python Programming Course",
@@ -30,7 +24,123 @@
             "author": "Avinash Jain, The Codex",
             "rating": 4.4,
             "enroller": "(2,974)",
-            "price": "E£269.99"
+            "price": "E£269.99",
+            "cat": 0
+        },
+        {
+            "title": "Learn Python: Python for Beginners",
+            "image_src": "./Images/c4python.jpg",
+            "author": "Abrar Husain",
+            "rating": 4.3,
+            "enroller": "(2,776)",
+            "price": "E£149.99",
+            "cat": 0
+        },
+        {
+            "title": "Python From Scratch & Selenium WebDriver QA Automation 2022",
+            "image_src": "./Images/c5python.jpg",
+            "author": "Admas Kinfu",
+            "rating": 4.6,
+            "enroller": "(1,825)",
+            "price": "E£169.99",
+            "cat": 0
+        },
+        {
+            "title": "Python for Data Structures, Algorithms, and Interviews!",
+            "image_src": "./Images/c6python.jpg",
+            "author": "Jose Portilla",
+            "rating": 4.5,
+            "enroller": "(10,725)",
+            "price": "E£169.99",
+            "cat": 0
+        },
+        {
+            "title": "Microsoft Excel 2013 Advanced. Online Excel Training Course",
+            "image_src": "./Images/c1excel.jpg",
+            "author": "Infinite Skills",
+            "rating": 4.5,
+            "enroller": "(3,511)",
+            "price": "E£169.99",
+            "cat": 1
+        },
+        {
+            "title": "The Complete 2022 Web Development Course",
+            "image_src": "./Images/c1web.jpg",
+            "author": "Development Island (UK)",
+            "rating": 4.6,
+            "enroller": "(6,858)",
+            "price": "E£319.99",
+            "cat": 2
+        },
+        {
+            "title": "The Web Developer Bootcamp (2022)",
+            "image_src": "./Images/c2web.jpg",
+            "author": "Colt steele",
+            "rating": 4.7,
+            "enroller": "(242,756)",
+            "price": "E£179.99",
+            "cat": 2
+        },
+        {
+            "title": "Build Responsive Website Using HTML5, CSS3, JS And Bootstrap",
+            "image_src": "./Images/c3web.jpg",
+            "author": "Irfan Dayan",
+            "rating": 4.2,
+            "enroller": "(4,535)",
+            "price": "E£149.99",
+            "cat": 2
+        },
+        {
+            "title": "The Complete Front-End Web Development Course!",
+            "image_src": "./Images/c4web.jpg",
+            "author": "Joseph Delgadillo",
+            "rating": 4.3,
+            "enroller": "(13,143)",
+            "price": "E£149.99",
+            "cat": 2
+        },
+        {
+            "title": "JavaScript: Understanding the Weird Parts",
+            "image_src": "./Images/c1js.jpg",
+            "author": "Anthony Alicea",
+            "rating": 4.7,
+            "enroller": "(45,243)",
+            "price": "E£199.99",
+            "cat": 3
+        }
+    ],
+    "top-cat": [
+        {
+            "title": "Design",
+            "image_src": "./Images/cat1.jpg"
+        },
+        {
+            "title": "Development",
+            "image_src": "./Images/cat2.jpg"
+        },
+        {
+            "title": "Marketing",
+            "image_src": "./Images/cat3.jpg"
+        },
+        {
+            "title": "IT and Software",
+            "image_src": "./Images/cat4.jpg"
+        },
+        {
+            "title": "Personal Development",
+            "image_src": "./Images/cat5.jpg"
+        },
+        {
+            "title": "Business",
+            "image_src": "./Images/cat6.jpg"
+        },
+        {
+            "title": "Photography",
+            "image_src": "./Images/cat7.jpg"
+        },
+        {
+            "title": "Music",
+            "image_src": "./Images/cat8.jpg"
         }
     ]
 }

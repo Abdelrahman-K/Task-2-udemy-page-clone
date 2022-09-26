@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 .card-container {
-    width: 80%;
+    width: 75%;
     margin: auto;
     margin-top: 0px;
     height: 50%;
@@ -29,13 +29,16 @@ body {
 
 
 .random-headers {
-    margin-left: 10%;
+    margin-left: 15%;
 }
-.random-headers a {
+.random-headers button {
     text-decoration: none;
     color: gray;
     margin-right: 10px;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
 }
-.random-headers a:hover {
-    color: black;
+.random-headers button:hover {
+    color: purple;
 }
